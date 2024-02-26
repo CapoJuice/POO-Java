@@ -26,11 +26,7 @@ public class Main {
         inventarioMonstro.adicionarItem("Vibrador", 1);
 
         inventarioMonstro.exibirItens();
-
-
-
-
-
+        
     
     }
 }
