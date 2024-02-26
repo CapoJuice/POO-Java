@@ -13,13 +13,19 @@ public class Main {
 
         monstro.atacar(guerreiro); 
 
-        Inventario inventarioguerreiro = new Inventario();
+        Inventario inventarioGuerreiro = new Inventario();
 
-        inventarioguerreiro.adicionarItem("cebola", 5);
-        inventarioguerreiro.adicionarItem("espada grande", 5);
-        inventarioguerreiro.adicionarItem("poçao vida", 5);
+        inventarioGuerreiro.adicionarItem("cebola", 5);
+        inventarioGuerreiro.adicionarItem("espada grande", 5);
+        inventarioGuerreiro.adicionarItem("poçao vida", 5);
 
-        inventarioguerreiro.exibirItens();
+        inventarioGuerreiro.exibirItens();
+
+        Inventario inventarioMonstro = new Inventario();
+
+        inventarioMonstro.adicionarItem("Vibrador", 1);
+
+        inventarioMonstro.exibirItens();
 
 
 
