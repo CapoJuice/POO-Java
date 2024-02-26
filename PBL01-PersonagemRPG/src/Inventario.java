@@ -4,8 +4,8 @@ public class Inventario {
     
     private ArrayList<Item> itens;
 
-    public Inventario(ArrayList<Item> itens) {
-        this.itens = itens;
+    public Inventario() {
+        itens = new ArrayList<>();
     }
 
     public ArrayList<Item> getItens() {

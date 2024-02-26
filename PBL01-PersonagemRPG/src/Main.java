@@ -9,6 +9,22 @@ public class Main {
 
         guerreiro.atacar(monstro); 
 
+        // Monstro ataca o guerreiro 
 
+        monstro.atacar(guerreiro); 
+
+        Inventario inventarioguerreiro = new Inventario();
+
+        inventarioguerreiro.adicionarItem("cebola", 5);
+        inventarioguerreiro.adicionarItem("espada grande", 5);
+        inventarioguerreiro.adicionarItem("poçao vida", 5);
+
+        inventarioguerreiro.exibirItens();
+
+
+
+
+
+    
     }
 }
