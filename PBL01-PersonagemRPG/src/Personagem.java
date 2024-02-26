@@ -50,7 +50,6 @@ public class Personagem {
         int danoCausado = this.ataque - alvo.defesa;
 
         if (danoCausado > 0) {
-
             System.out.println(this.nome + " atacou " + alvo.nome + " causando " + danoCausado + " de dano.");
 
             alvo.receberDano(danoCausado);
