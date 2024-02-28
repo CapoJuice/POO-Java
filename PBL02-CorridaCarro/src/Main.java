@@ -12,8 +12,8 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             System.out.println("Iteração " + (i + 1));
 
-            if (c1.velocidade > 0 && c1.velocidade < 160) {
-                int acaoC1 = rand.nextInt(3); // 0 para acelerar, 1 para frear, 2 para manter
+            if (c1.velo > 0 && c1.velo < 160) {
+                int acaoC1 = rand.nextInt(3);
                 if (acaoC1 == 0) {
                     c1.acelerar();
                 } else if (acaoC1 == 1) {
@@ -24,7 +24,7 @@ public class Main {
                 System.out.println("Status de c1: " + c1.status());
             }
 
-            if (c2.velocidade > 0 && c2.velocidade < 160) {
+            if (c2.velo > 0 && c2.velo < 160) {
                 int acaoC2 = rand.nextInt(3);
                 if (acaoC2 == 0) {
                     c2.acelerar();
@@ -36,7 +36,7 @@ public class Main {
                 System.out.println("Status de c2: " + c2.status());
             }
 
-            if (c3.velocidade > 0 && c3.velocidade < 160) {
+            if (c3.velo > 0 && c3.velo < 160) {
                 int acaoC3 = rand.nextInt(3);
                 if (acaoC3 == 0) {
                     c3.acelerar();
@@ -51,15 +51,15 @@ public class Main {
             System.out.println();
 
             try {
-                Thread.sleep(3000); // Espera 3 segundos entre as iterações
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
 
-        if (c1.velocidade > c2.velocidade && c1.velocidade > c3.velocidade) {
+        if (c1.velo > c2.velo && c1.velo > c3.velo) {
             System.out.println("Audi Ganhou !!!");
-        } else if (c2.velocidade > c1.velocidade && c2.velocidade > c3.velocidade) {
+        } else if (c2.velo > c1.velo && c2.velo > c3.velo) {
             System.out.println("BMW Ganhou !!!");
         }else {
             System.out.println("Mercedes Ganhou !!!");
