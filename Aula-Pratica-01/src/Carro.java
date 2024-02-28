@@ -1,4 +1,3 @@
-package exemploBesta;
 
 //classe de um objeto sem construtores
 
