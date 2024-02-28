@@ -21,7 +21,7 @@ public class Main {
                 } else {
                     c1.manter();
                 }
-                System.out.println("Status de c1: " + c1.status());
+                System.out.println("Velocidade do Audi: " + c1.status() + " KM/h");
             }
 
             if (c2.velo > 0 && c2.velo < 160) {
@@ -33,7 +33,7 @@ public class Main {
                 } else {
                     c2.manter();
                 }
-                System.out.println("Status de c2: " + c2.status());
+                System.out.println("Velocidade da BMW: " + c2.status() + " KM/h");
             }
 
             if (c3.velo > 0 && c3.velo < 160) {
@@ -45,7 +45,7 @@ public class Main {
                 } else {
                     c3.manter();
                 }
-                System.out.println("Status de c3: " + c3.status());
+                System.out.println("Velocidade da Mercedes: " + c3.status() + " KM/h");
             }
 
             System.out.println();
